@@ -8,5 +8,11 @@ public class Main {
 	// write your code here
         SwitchClass switchClass = new SwitchClass();
         switchClass.switchTest(1);
+
+        switchClass.convertString('N');
+        switchClass.convertString('A');
+        switchClass.convertString('T');
+        switchClass.convertString('O');
+        switchClass.printDayOfWeek(1);
     }
 }
