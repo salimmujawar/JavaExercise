@@ -1,6 +1,6 @@
 package com.smujawar;
 
-import ControlFlow.SwitchClass;
+import ControlFlow.Switch.SwitchClass;
 
 public class Main {
 

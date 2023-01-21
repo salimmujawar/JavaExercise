@@ -1,4 +1,4 @@
-package ForLoop;
+package ControlFlow.ForLoop;
 
 public class ForLoop {
 

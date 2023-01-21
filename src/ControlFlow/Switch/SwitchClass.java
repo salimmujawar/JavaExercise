@@ -1,4 +1,4 @@
-package ControlFlow;
+package ControlFlow.Switch;
 
 public class SwitchClass {
 
