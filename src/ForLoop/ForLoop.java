@@ -4,6 +4,19 @@ public class ForLoop {
 
     public static void main(String[] args) {
         int countPrime = 0;
+        int sumOfMatches = 0;
+        int countOfMatches = 0;
+        for (int i =1; i<=1000; i++) {
+            if ((i%3 == 0) && (i%5==0)) {
+                sumOfMatches += i;
+                System.out.println(i + " is divisible by 3 and 5");
+                countOfMatches ++;
+            }
+            if (countOfMatches == 5){
+                break;
+            }
+        }
+
         for (double i = 7.5; i <= 10; i+=0.25) {
             System.out.println("Amount: 100, Interest Rate: "+ i + ", Interest: "+  calculateInterest(100, i));
         }
