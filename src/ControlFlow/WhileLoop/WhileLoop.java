@@ -6,7 +6,9 @@ public class WhileLoop {
         int finishNumber = 20;
         int evenCount = 0;
         int oddCount = 0;
-
+        System.out.println(sumFirstAndLastDigit(252));
+        System.out.println(isPalindrome(707));
+        System.out.println(isPalindrome(-1221));
         System.out.println("For the digit 123, total sum is: "+ sumDigits(123));
         System.out.println("For the digit -123, total sum is: "+ sumDigits(-123));
         System.out.println("For the digit 4, total sum is: "+ sumDigits(4));
@@ -47,5 +49,43 @@ public class WhileLoop {
             }
         }
         return sumOfDigits;
+    }
+
+    public static boolean isPalindrome(int num) {
+        int reverse  = 0;
+        if (num < 0 ) {
+            num *= -1;
+        }
+        int tmp = num;
+        //extract last digit
+        int lastDigit = 0;
+
+        while (num > 0) {
+            lastDigit = num % 10;
+            //Increase place value by 1
+            reverse *= 10;
+            //add last digit
+            reverse += lastDigit;
+            num = num / 10;
+        }
+        if (reverse == tmp) {
+            return true;
+        }
+        return false;
+    }
+
+    public static int sumFirstAndLastDigit(int num) {
+        if (num < 0 ) {
+            return -1;
+        }
+        int lastDigit = num % 10;
+        int firstDigit = 0;
+
+        while ( num > 0) {
+            firstDigit = num;
+            num = num / 10;
+        }
+
+        return firstDigit + lastDigit;
     }
 }
